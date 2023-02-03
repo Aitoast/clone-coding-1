@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Talk</title>
 </head>
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
             <!-- To DO: WIFI icon -->
         </div>
         <div class="status-bar__column">
             <SPAN>18:43</SPAN>
         </div>
         <div class="status-bar__column">
-            <span>110%</span>
+            <span>11%</span>
+            <i class="fa-solid fa-battery-three-quarters"></i>
             <!--Battery Icon-->
+            <i class="fa-solid fa-bolt-lightning"></i>
             <!--Lightning Icon-->
         </div>
     </div>
+        <header class="Welcome-header">
+            <h1 class="Welcome-header__title">Welcome to Talk</h1>
+            <p class="Welcome-header__text">
+                If you have a Account, log-in with your email or phone number
+            </p>
+        </header>
+        <form id="login-form" action="">
+            <input type="text" placeholder="Email or Number">
+            <input type="password" placeholder="PassWord">
+            <input type="submit" value="Log In">
+            <a href="#">Find Account or Password</a>
+        </form>
+    <script src="https://kit.fontawesome.com/74cda243c9.js" crossorigin="anonymous">
+    </script>
 </body>
 </html>
 
