@@ -1,36 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family");
+
 @import "reset.css";
-@import "status-bar.css";
+@import "variables.css";
+
+/* component */
+@import "component/status-bar.css";
+@import "component/nav-bar.css";
+@import "component/screen-header.css";
+@import "component/user-component.css";
+@import "component/badge.css";
+/* screen */
+@import "screen/login.css";
+@import "screen/friends.css";
+@import "screen/find.css";
+
+
+/* badge */
 
 
 body {
-    font-family: "Open Sans" sans-serif
+    color: #2e363e;
+    font-family: "Open Sans" sans-serif;
+    height: 200vh;
 }
 
 
-.Welcome-header {
-    margin-top: 90px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-}
-.Welcome-header__title {
-    margin-bottom: 50px;
-    font-size: 25px;
-}
-
-.Welcome-header__text {
-    width: 60%;
-    opacity: 0.7;
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
-}
-#login-form input {
-    border: none;
-    padding: 10px 0px;
+.main-screen {
+    padding: 0px var(--horizontal-space);
 }
